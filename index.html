@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Soumaya ♡</title>
+<style>
+:root{--pink:#ff72ad;--hot:#f34d91;--pale:#fff0f6;--cream:#fffafd;--ink:#7c3c5c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS",system-ui,sans-serif;color:var(--ink);background:linear-gradient(135deg,#ffe6f0,#fff7fb 45%,#ffd9e9);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#ff8fba 1.2px,transparent 1.2px);background-size:23px 23px;z-index:-1}
+.float-layer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float{position:absolute;bottom:-50px;opacity:0;animation:rise linear infinite;font-size:20px;filter:drop-shadow(0 3px 5px #ffb2ce66)}
+@keyframes rise{0%{transform:translateY(0) rotate(0) scale(.7);opacity:0}10%{opacity:.8}90%{opacity:.7}100%{transform:translateY(-115vh) rotate(35deg) scale(1.2);opacity:0}}
+.wrap{position:relative;z-index:1;width:min(920px,92%);margin:auto;padding:30px 0 65px}
+.language-switch{display:flex;justify-content:center;gap:8px;margin:16px auto 8px}
+.lang-btn{padding:9px 15px;border:1px solid #f5a4c4;border-radius:999px;background:#ffffffb8;color:#b45d82;font-size:13px;font-weight:bold;cursor:pointer;transition:.25s}
+.lang-btn:hover{transform:translateY(-2px);background:#fff}
+.lang-btn.active{background:linear-gradient(120deg,#ff91bd,#ef4e91);color:white;border-color:transparent;box-shadow:0 5px 12px #ef75a844}
+.topline{text-align:center;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#d76a98;animation:fadeDown 1s both}
+h1{font-family:Georgia,serif;text-align:center;font-size:clamp(44px,9vw,86px);line-height:1.02;margin:22px 0 12px;color:#ed5797;text-shadow:3px 4px 0 #fff,0 9px 24px #f6a8c766;animation:titlePop 1s cubic-bezier(.2,1.5,.5,1) both}
+.subtitle{text-align:center;font-size:17px;color:#a65b7c;margin:0 auto 30px;animation:fadeUp 1s .2s both}
+.hero{position:relative;text-align:center;padding:25px 18px 35px;border:2px solid #fff;background:#ffffffa8;border-radius:35px;box-shadow:0 18px 50px #e77eaa30;overflow:hidden;animation:fadeUp .9s .25s both}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#ffc0d8;font-size:70px;animation:heartbeat 2.2s infinite}
+.hero:before{top:8px;left:22px}.hero:after{bottom:0;right:22px;animation-delay:.6s}
+.cat-row{display:flex;justify-content:center;gap:18px;align-items:center;margin:12px 0 18px}
+.cat{font-size:38px;display:inline-block;animation:catBounce 2s ease-in-out infinite;filter:drop-shadow(0 5px 4px #e98ab555)}
+.cat:nth-child(2){animation-delay:.25s;font-size:48px}.cat:nth-child(3){animation-delay:.5s}
+.hero p{font-size:16px;line-height:1.8;max-width:580px;margin:0 auto;color:#9c5777}
+button{border:0;cursor:pointer;font:inherit}
+.open-btn{margin-top:23px;padding:14px 25px;border-radius:999px;color:white;font-weight:bold;letter-spacing:.3px;background:linear-gradient(120deg,#ff91bd,#ef4e91);box-shadow:0 8px 0 #d94383,0 14px 25px #ef75a855;transition:transform .2s,box-shadow .2s;animation:glow 2s infinite}
+.open-btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 12px 0 #d94383,0 18px 28px #ef75a855}
+.open-btn:active{transform:translateY(3px);box-shadow:0 4px 0 #d94383}
+.section-title{text-align:center;font: bold 27px Georgia,serif;color:#e75c98;margin:45px 0 18px}
+.love-note{max-width:700px;margin:0 auto;background:linear-gradient(145deg,#fffdfd,#fff0f6);border:2px dashed #f5a4c4;border-radius:24px;padding:27px 30px;box-shadow:0 12px 35px #e77eaa25;transform:rotate(-.5deg);transition:transform .4s}
+.love-note:hover{transform:rotate(0) translateY(-4px)}
+.note-top{display:flex;justify-content:space-between;align-items:center;color:#e66a9d;font-size:13px;letter-spacing:2px}
+.note-body{font-family:Georgia,serif;font-size:18px;line-height:1.9;color:#87506b;margin-top:17px}
+.signature{font-family:"Brush Script MT","Segoe Script",cursive;font-size:29px;color:#e74e91;text-align:right;margin-top:12px}
+.hidden-letter{display:none;animation:letterIn .8s cubic-bezier(.2,1.3,.5,1) both}
+.hidden-letter.show{display:block}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:20px auto 0;max-width:760px}
+.tile{background:#fff;border:2px solid white;border-radius:22px;padding:20px 12px;text-align:center;box-shadow:0 10px 25px #e77eaa22;transition:transform .35s}
+.tile:hover{transform:translateY(-9px) rotate(2deg) scale(1.03)}
+.tile .big{font-size:38px;display:block;margin-bottom:8px;animation:wobble 3s infinite}
+.tile strong{color:#e45c95;font-size:15px}.tile small{display:block;margin-top:5px;color:#a86a85}
+.footer{text-align:center;margin:45px 0 0;color:#bb7191;font-size:13px}
+.footer .paw{font-size:25px;display:block;margin-bottom:8px;animation:heartbeat 2s infinite}
+.sparkle{display:inline-block;animation:spin 5s linear infinite}
+.confetti{position:fixed;pointer-events:none;z-index:5;font-size:22px;animation:burst 1.5s ease-out forwards}
+@keyframes titlePop{from{opacity:0;transform:scale(.65) rotate(-5deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
+@keyframes catBounce{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-10px) rotate(4deg)}}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 0 #ff8cba)}50%{filter:drop-shadow(0 0 9px #ff8cba)}}
+@keyframes letterIn{from{opacity:0;transform:translateY(35px) scale(.95) rotate(-2deg)}to{opacity:1;transform:translateY(0) scale(1) rotate(-.5deg)}}
+@keyframes wobble{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg) scale(1.1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes burst{0%{transform:translate(0,0) scale(.5);opacity:1}100%{transform:translate(var(--x),var(--y)) rotate(160deg) scale(1.5);opacity:0}}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}.tile{padding:14px}.love-note{padding:20px}.note-body{font-size:16px}.hero{padding:25px 14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="float-layer" id="floatLayer" aria-hidden="true"></div>
+<main class="wrap">
+  <div class="topline" data-i18n="topline">a tiny corner of the internet, just for you ♡</div>
+  <div class="language-switch" aria-label="Choose language">
+    <button class="lang-btn active" id="enBtn" type="button">🇬🇧 English</button>
+    <button class="lang-btn" id="frBtn" type="button">🇫🇷 Français</button>
+  </div>
+  <h1>Soumaya</h1>
+  <p class="subtitle"><span data-i18n="subtitle">the cutest human in my little universe</span> <span class="sparkle">✧</span></p>
+
+  <section class="hero">
+    <div class="cat-row" aria-label="Cute cats"><span class="cat">🐈</span><span class="cat">🐈‍⬛</span><span class="cat">🐱</span></div>
+    <p data-i18n="intro">I made you this little pink world, filled with tiny cats, floating hearts, and all the sweetness I could fit on one page.</p>
+    <button class="open-btn" id="openLetter" data-i18n="open">Open your little love letter 💌</button>
+  </section>
+
+  <h2 class="section-title" data-i18n="letterTitle">A letter, just for you</h2>
+  <section class="love-note hidden-letter" id="letter">
+    <div class="note-top"><span data-i18n="noteLabel">✿ A LITTLE NOTE ✿</span><span>20.11.2026</span></div>
+    <div class="note-body" id="letterBody">
+      Dear Soumaya,<br><br>
+      If this page could give you a thousand flowers, it would. If every tiny heart here could tell you something, they would all say how special you are.<br><br>
+      I hope your days are full of soft moments, happy surprises, and reasons to smile. You deserve all the kindness in the world — and maybe a whole army of tiny cats to keep you company.<br><br>
+      This little website is just a small reminder that someone thinks you're wonderful. ♡
+    </div>
+    <div class="signature" data-i18n="signature">with lots of love ♡</div>
+  </section>
+
+  <h2 class="section-title" data-i18n="factsTitle">Important facts about you</h2>
+  <section class="gallery">
+    <div class="tile"><span class="big">🌷</span><strong data-i18n="fact1">100% lovely</strong><small data-i18n="fact1sub">scientifically adorable</small></div>
+    <div class="tile"><span class="big">🐾</span><strong data-i18n="fact2">Cat-approved</strong><small data-i18n="fact2sub">the cats said so</small></div>
+    <div class="tile"><span class="big">💗</span><strong data-i18n="fact3">One of a kind</strong><small data-i18n="fact3sub">no copy, no replacement</small></div>
+  </section>
+  <footer class="footer"><span class="paw">🐾 ♡ 🐾</span><span data-i18n="footer">made with a little bit of code and a lot of love for Soumaya</span></footer>
+</main>
+<script>
+const layer=document.getElementById('floatLayer');
+const symbols=['♡','♥','✿','🐾','🐱','✨','💗'];
+for(let i=0;i<28;i++){
+  const el=document.createElement('span');el.className='float';
+  el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  el.style.left=Math.random()*100+'%';
+  el.style.animationDuration=(9+Math.random()*13)+'s';
+  el.style.animationDelay=(-Math.random()*20)+'s';
+  el.style.fontSize=(14+Math.random()*18)+'px';
+  layer.appendChild(el);
+}
+const letter=document.getElementById('letter');
+document.getElementById('openLetter').addEventListener('click',()=>{
+  letter.classList.toggle('show');
+  const currentLang = document.documentElement.lang || 'en';
+  document.getElementById('openLetter').textContent=letter.classList.contains('show')?translations[currentLang].close:translations[currentLang].open;
+  if(letter.classList.contains('show')){
+    letter.scrollIntoView({behavior:'smooth',block:'center'});
+    burstHearts();
+  }
+});
+function burstHearts(){
+  const chars=['💗','💕','♡','🐾','✨','🌸'];
+  for(let i=0;i<22;i++){
+    const e=document.createElement('span');e.className='confetti';
+    e.textContent=chars[Math.floor(Math.random()*chars.length)];
+    e.style.left=(window.innerWidth/2)+'px';e.style.top=(window.innerHeight*.45)+'px';
+    e.style.setProperty('--x',(Math.random()*460-230)+'px');
+    e.style.setProperty('--y',(Math.random()*-360-40)+'px');
+    document.body.appendChild(e);setTimeout(()=>e.remove(),1600);
+  }
+}
+
+const translations = {
+  en: {
+    topline: "a tiny corner of the internet, just for you ♡",
+    subtitle: "the cutest human in my little universe",
+    intro: "I made you this little pink world, filled with tiny cats, floating hearts, and all the sweetness I could fit on one page.",
+    open: "Open your little love letter 💌",
+    close: "Close your little letter 💗",
+    letterTitle: "A letter, just for you",
+    noteLabel: "✿ A LITTLE NOTE ✿",
+    letter: "Dear Soumaya,<br><br>If this page could give you a thousand flowers, it would. If every tiny heart here could tell you something, they would all say how special you are.<br><br>I hope your days are full of soft moments, happy surprises, and reasons to smile. You deserve all the kindness in the world — and maybe a whole army of tiny cats to keep you company.<br><br>This little website is just a small reminder that someone thinks you're wonderful. ♡",
+    signature: "with lots of love ♡",
+    factsTitle: "Important facts about you",
+    fact1: "100% lovely", fact1sub: "scientifically adorable",
+    fact2: "Cat-approved", fact2sub: "the cats said so",
+    fact3: "One of a kind", fact3sub: "no copy, no replacement",
+    footer: "made with a little bit of code and a lot of love for Soumaya"
+  },
+  fr: {
+    topline: "un petit coin d’internet, rien que pour toi ♡",
+    subtitle: "la personne la plus adorable de mon petit univers",
+    intro: "J’ai créé ce petit monde rose pour toi, rempli de petits chats, de cœurs qui flottent et de toute la douceur que je pouvais y mettre.",
+    open: "Ouvre ta petite lettre d’amour 💌",
+    close: "Referme ta petite lettre 💗",
+    letterTitle: "Une lettre, rien que pour toi",
+    noteLabel: "✿ UN PETIT MOT ✿",
+    letter: "Chère Soumaya,<br><br>Si cette page pouvait t’offrir mille fleurs, elle le ferait. Si chaque petit cœur pouvait te dire quelque chose, ils te diraient tous à quel point tu es spéciale.<br><br>J’espère que tes journées seront remplies de doux moments, de jolies surprises et de raisons de sourire. Tu mérites toute la gentillesse du monde — et peut-être même toute une armée de petits chats pour te tenir compagnie.<br><br>Ce petit site est simplement un rappel : quelqu’un te trouve merveilleuse. ♡",
+    signature: "avec énormément d’amour ♡",
+    factsTitle: "Quelques vérités sur toi",
+    fact1: "100 % adorable", fact1sub: "adorable, c’est prouvé",
+    fact2: "Approuvée par les chats", fact2sub: "les chats l’ont confirmé",
+    fact3: "Unique au monde", fact3sub: "irremplaçable",
+    footer: "créé avec un peu de code et énormément d’amour pour Soumaya"
+  }
+};
+
+function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) el.innerHTML = translations[lang][key];
+  });
+  document.getElementById("enBtn").classList.toggle("active", lang === "en");
+  document.getElementById("frBtn").classList.toggle("active", lang === "fr");
+  document.getElementById("openLetter").textContent =
+    letter.classList.contains("show") ? translations[lang].close : translations[lang].open;
+  document.getElementById("letterBody").innerHTML = translations[lang].letter;
+}
+document.getElementById("enBtn").addEventListener("click", () => setLanguage("en"));
+document.getElementById("frBtn").addEventListener("click", () => setLanguage("fr"));
+
+</script>
+</body>
+</html>
